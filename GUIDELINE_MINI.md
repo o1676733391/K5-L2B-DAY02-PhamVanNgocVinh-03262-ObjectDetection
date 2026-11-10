@@ -23,7 +23,4 @@
 
 | Ảnh | Tình huống | Quyết định cuối | Lý do theo schema |
 | --- | --- | --- | --- |
-| `drive_052.jpg` | **Box 7** (`[207.3, 131.8, 339.8, 551.3]`): Xe cỡ lớn ở tiền cảnh bên trái, góc nhìn từ trên xuống; dễ phân vân giữa `car` (SUV to) và `van`. | Gán `van` (Class 3) | Thân xe đơn khối hình hộp chữ nhật dài, trần xe cao bằng phẳng từ cabin đến đuôi, thuộc dòng xe van thương mại/chở hàng nhẹ chứ không phải SUV gia đình. |
-| `drive_052.jpg` | **Box 0** (`[459.7, 8.8, 477.2, 38.3]`): Xe ở vị trí rất xa trên giao lộ, kích thước nhỏ (~17.5×29.5 px); dễ nhầm với xe con sedan. | Gán `truck` (Class 1) | Quan sát thấy cabin phía trước tách biệt cơ học với phần thùng hàng phẳng/cao phía sau, mang kết cấu đặc trưng của xe tải khác với mui sedan dốc của Box 1 ngay cạnh. |
-| `drive_052.jpg` | **Box 6** (`[598.0, 161.0, 640.0, 247.0]`): Xe con di chuyển vào khung hình ở góc phải, bị rìa phải ảnh cắt mất nửa thân xe. | Gán `car` (Class 0), mép phải box chạm đúng viền ảnh `xmax = 640.0` (`1.0`) | Tuân thủ quy tắc truncation: chỉ vẽ box ôm sát nửa thân xe nhìn thấy được trong ảnh, cạnh box áp sát biên ảnh, không ước đoán nửa xe còn lại ngoài ảnh. |
-| `drive_051.jpg` | **Box 3** (`[494.8, 19.0, 565.2, 148.0]`): Xe lớn màu trắng bên lề đường, phân vân giữa van chở khách dài và bus. | Gán `bus` (Class 2) | Chiều dài vượt trội (>125 px), thân xe lớn có dãy cửa sổ hành khách nhiều khoang đặc trưng của xe buýt/xe khách lớn. |
+    
