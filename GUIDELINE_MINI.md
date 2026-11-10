@@ -23,8 +23,4 @@
 
 | Ảnh | Tình huống | Quyết định cuối | Lý do theo schema |
 | --- | --- | --- | --- |
-| `drive_052.jpg` | Xe thân cao đơn khối màu bạc đỗ bên trái (Box 8, diện tích lớn chiếm trọn nửa dưới khung hình). Dễ nhầm giữa `bus` và `van`. | Gán `van` (Class 3) | Xe có kết cấu mono-volume (khoang động cơ và thân xe liền khối, trần cao bằng phẳng), kích thước tầm trung chuyên chở hàng/khách nhỏ (minivan), không đạt chiều dài và số dãy cửa kính lớn của `bus`. |
-| `drive_052.jpg` | Xe ở xa làn đối diện phía trên bên phải (Box 1). Dễ nhầm giữa SUV cỡ lớn (`car`) và xe tải nhỏ (`truck`). | Gán `truck` (Class 1) | Quan sát rõ phần cabin điều khiển phía trước tách biệt cơ học với bửng thùng hàng phía sau chuyên dụng chở hàng, thỏa mãn định nghĩa `truck`. |
-| `drive_051.jpg` | Xe dài màu trắng di chuyển ở làn xa phía bên phải (Box 4). Dễ nhầm với xe van thương mại dài do góc nhìn xa. | Gán `bus` (Class 2) | Xe có thân dài vượt trội, nhiều hàng ghế và dải cửa sổ kính hành khách chạy dọc thân xe, kiểu dáng xe buýt công cộng/du lịch điển hình. |
-| `drive_052.jpg` | Xe con màu sẫm ở sát mép phải khung hình (Box 7) bị cắt cụt (truncation) mất nửa thân xe bên phải. | Gán `car` (Class 0) | Xe bị mép ảnh cắt ngang nhưng vẫn nhận diện rõ đèn hậu, đuôi xe con. Đóng box sát mép hiển thị nhìn thấy được, cạnh phải chạm đúng viền ảnh ($x_{\text{max}} = 1.0$), không ước lượng phần thân xe bị mất ra ngoài biên ảnh. |
-
+    
